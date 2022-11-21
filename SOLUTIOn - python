@@ -1,0 +1,12 @@
+n = int(input('Enter n: '))
+k = int (input('Enter k: '))
+
+def fib (n,k):
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    else:
+        return (fib(n-2,k) * k) + fib(n-1,k)
+
+print('Total rabbits in year ' + str(n) + ' = ' + str(fib(n,k)))
